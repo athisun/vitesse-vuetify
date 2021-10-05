@@ -14,6 +14,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import vuetify from '@vuetify/vite-plugin'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -138,6 +139,9 @@ export default defineConfig({
       // change this to enable inspect for debugging
       enabled: false,
     }),
+
+    // https://github.com/vuetifyjs/vuetify-loader/
+    vuetify({ autoImport: true }),
   ],
 
   server: {
