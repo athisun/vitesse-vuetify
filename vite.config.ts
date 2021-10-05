@@ -165,6 +165,8 @@ export default defineConfig({
     ],
     exclude: [
       'vue-demi',
+      '@vuetify/loader-shared/runtime',
+      'vuetify',
     ],
   },
 })
